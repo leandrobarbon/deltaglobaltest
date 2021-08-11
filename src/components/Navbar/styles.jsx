@@ -57,9 +57,11 @@ export const Navbar = styled.div`
     display: none;
   }
 
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 768px) {
+    width: 100%;
+
     .nav-logo {
-      margin-top: -70px;
+      margin-top: -60px;
     }
 
     .nav-menu {

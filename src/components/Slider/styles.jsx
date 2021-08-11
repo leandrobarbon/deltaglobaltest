@@ -2,10 +2,13 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   width: 1200px;
+  margin: 0 auto;
   height: 423px;
   display: flex;
+  justify-content: center;
 
   .testedelta {
+    width: 100%;
     position: absolute;
     top: 30%;
     left: 10%;
@@ -28,7 +31,7 @@ export const Container = styled.div`
 
   @media (max-width: 768px) {
     display: flex;
-    width: 76px;
+    width: 370px;
     margin-bottom: -80px;
 
     .testedelta {
@@ -107,8 +110,8 @@ export const SliderShow1 = styled.div`
   }
 
   @media (max-width: 768px) {
-    width: 360px;
-    height: 300px;
+    width: 365px;
+    height: 200px;
 
     background-color: #094f7c;
 
@@ -117,8 +120,8 @@ export const SliderShow1 = styled.div`
     img {
       border-radius: 10px;
 
-      width: 360px;
-      height: 300px;
+      width: 365px;
+      height: 200px;
 
       opacity: 0.4;
     }
@@ -181,8 +184,8 @@ export const SliderShow2 = styled.div`
     border-radius: 10px;
 
     img {
-      width: 360px;
-      height: 300px;
+      width: 365px;
+      height: 200px;
 
       opacity: 0.4;
     }
@@ -207,8 +210,8 @@ export const SliderShow3 = styled.div`
     border-radius: 10px;
 
     img {
-      width: 360px;
-      height: 300px;
+      width: 365px;
+      height: 200px;
 
       opacity: 0.4;
     }
