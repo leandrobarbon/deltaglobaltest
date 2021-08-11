@@ -192,6 +192,7 @@ export const SliderShow2 = styled.div`
   }
 `;
 
+
 export const SliderShow3 = styled.div`
   background-color: #aa0202c2;
 
