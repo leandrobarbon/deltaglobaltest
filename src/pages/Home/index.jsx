@@ -1,19 +1,19 @@
-import React from 'react';
+import React from "react";
 
-import { Container } from './styles';
+import { Container } from "./styles";
 
-import NavBar from '../../components/Navbar';
-import Slider from '../../components/Slider';
-import Cards from '../../components/Cards';
+import NavBar from "../../components/Navbar";
+import Slider from "../../components/Slider";
+import Cards from "../../components/Cards";
 
 function Home() {
-   return (
-      <Container>
+  return (
+    <Container>
       <NavBar />
       <Slider />
       <Cards />
-      </Container>
-   );
+    </Container>
+  );
 }
 
 export default Home;
