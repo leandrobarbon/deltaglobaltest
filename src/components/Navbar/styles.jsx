@@ -24,7 +24,6 @@ export const Navbar = styled.div`
   }
 
   .nav-links {
-    color: #fff;
     text-decoration: none;
     padding: 0.5rem 1rem;
     height: 100%;
@@ -37,6 +36,9 @@ export const Navbar = styled.div`
   .nav-item {
     line-height: 40px;
     margin-right: 1rem;
+
+    color: #333333;
+    text-decoration: none;
   }
 
   .nav-item:after {
@@ -71,13 +73,15 @@ export const Navbar = styled.div`
       position: absolute;
       top: 80px;
       left: -110%;
+
       opacity: 1;
+
       transition: all 0.5s ease;
       color: #fff;
     }
 
     .nav-menu.active {
-      background: #094f7c;
+      background: #f5f5f5;
       left: 0px;
       opacity: 1;
       transition: all 0.5s ease;
@@ -102,7 +106,11 @@ export const Navbar = styled.div`
     }
 
     .nav-search {
-      display: none;
+      display: block;
+      position: relative;
+      margin-left: 9rem;
+
+      color: #333333;
     }
   }
 `;
