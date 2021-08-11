@@ -15,6 +15,10 @@ body {
     align-items: center;
     background: #F5F5F5;
     -webkit-font-smoothing: antialiased;
+
+    @media (max-width: 768px) {
+        width: 100%;
+    }
 }
 
 body, input, button {

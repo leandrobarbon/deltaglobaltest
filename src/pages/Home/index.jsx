@@ -2,14 +2,14 @@ import React from 'react';
 
 import { Container } from './styles';
 
-import Navbar from '../../components/Navbar';
+import NavBar from '../../components/Navbar';
 import Slider from '../../components/Slider';
 import Cards from '../../components/Cards';
 
 function Home() {
    return (
       <Container>
-      <Navbar />
+      <NavBar />
       <Slider />
       <Cards />
       </Container>

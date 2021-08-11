@@ -1,24 +1,34 @@
+import React, { useState } from "react";
+import { Navbar } from "./styles";
 
-import { Container, Image, Menu, LogoMenu, Icon } from './styles';
+import Logo from "../../assets/logo.jpg";
+import { FaBars, FaSistrix } from "react-icons/fa";
 
-import Logo from '../../assets/logo.jpg'
-import { FaSearch } from "react-icons/fa";
+function NavBar() {
+  const [click, setClick] = useState(false);
 
-function Navbar() {
-   return(
-      <Container>
-         <LogoMenu>
-         <Image src={Logo}/>
-         <Menu>
-            <a href="/" >Primeiro Menu</a>
-            <a href="/" >Segundo Menu</a>
-            <a href="/" >Terceiro Menu</a>
-            <a href="/" >Quarto Menu</a>
-         </Menu>
-         </LogoMenu>
-         <Icon><FaSearch size={24.8}/></Icon>
-      </Container>
-   );
+  const handleClick = () => setClick(!click);
+  return (
+    <Navbar>
+      <div className="nav-container">
+        <img src={Logo} alt="logo Delta Global" className="nav-logo"/>
+
+        <ul className={click ? "nav-menu active" : "nav-menu"}>
+          <li className="nav-item">Primeiro Menu</li>
+          <li className="nav-item">Segundo Menu</li>
+          <li className="nav-item">Terceiro Menu</li>
+          <li className="nav-item">Quarto Menu</li>
+          
+        </ul>
+        <div className="nav-search">
+          <FaSistrix  size={24}/>
+        </div>
+        <div className="nav-icon" onClick={handleClick}>
+          <FaBars />
+        </div>
+      </div>
+    </Navbar>
+  );
 }
 
-export default Navbar;
+export default NavBar;

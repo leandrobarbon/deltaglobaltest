@@ -17,7 +17,7 @@ function Cards() {
               sed diam
             </strong>
             <section>
-              <img src={listArtigo.photo} alt="Image Github"/>
+              <img src={listArtigo.photo} alt="Github"/>
               <p>
                 {listArtigo.escritor} <br /> <span>{listArtigo.data}</span>
               </p>

@@ -1,36 +1,106 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
-  width: 100%;
+export const Navbar = styled.div`
+  width: 1200px;
+  margin: 0 auto;
+  padding: 56px 0 56px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 56px 0 55px;
-`;
+  background-color: #f5f5f5;
 
-export const LogoMenu = styled.div`
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-`;
-
-export const Image = styled.img`
-  width: 168.9px;
-  height: 56.12px;
-`;
-
-export const Menu = styled.ul`
-  display: flex;
-
-  a {
-    text-decoration: none;
-    font-family: 'Poppins', sans-serif;
-
-    margin-left: 50px;
+  .nav-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-`;
 
-export const Icon = styled.p`
-  display: flex;
-  right: 116px;
+  .nav-menu {
+    display: flex;
+    list-style: none;
+    text-align: center;
+    margin-right: 2rem;
+
+    font-family: "Poppins", sans-serif;
+  }
+
+  .nav-links {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    height: 100%;
+    border-bottom: 3px solid transparent;
+  }
+  .fa-code {
+    margin-left: 1rem;
+  }
+
+  .nav-item {
+    line-height: 40px;
+    margin-right: 1rem;
+  }
+
+  .nav-item:after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 0;
+    background: transparent;
+    transition: width 0.7s ease, background-color 0.5s ease;
+  }
+
+  .nav-search {
+    position: absolute;
+    right: 19%;
+  }
+
+  .nav-icon {
+    display: none;
+  }
+
+  @media screen and (max-width: 960px) {
+    .nav-logo {
+      margin-top: -70px;
+    }
+
+    .nav-menu {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      position: absolute;
+      top: 80px;
+      left: -110%;
+      opacity: 1;
+      transition: all 0.5s ease;
+      color: #fff;
+    }
+
+    .nav-menu.active {
+      background: #094f7c;
+      left: 0px;
+      opacity: 1;
+      transition: all 0.5s ease;
+      z-index: 1;
+    }
+
+    .nav-links {
+      padding: 1.5rem;
+      width: 100%;
+      display: table;
+    }
+
+    .nav-icon {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: translate(-100%, 60%);
+      font-size: 1.8rem;
+      cursor: pointer;
+      color: #10264e;
+    }
+
+    .nav-search {
+      display: none;
+    }
+  }
 `;

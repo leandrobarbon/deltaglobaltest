@@ -3,24 +3,6 @@ import styled from "styled-components";
 
 
 export const Container = styled.div`
-   width: 1200px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-    grid-auto-rows: minmax(20rem, auto);
-    grid-column-gap: 30px;
-    grid-row-gap: 30px;
-    justify-content: center;
-    margin-top: 91px;
-    margin-bottom: 108px;
-    grid-template-areas:
-      "artigo1 artigo2"
-      "artigo3 artigo4"
-      "artigo5 artigo6";
-
-
-
-  @media (min-width: 768px) {
     width: 1200px;
     margin: 0 auto;
     display: grid;
@@ -34,6 +16,26 @@ export const Container = styled.div`
     grid-template-areas:
       "artigo1 artigo2 artigo3"
       "artigo4 artigo5 artigo6";
+  
+
+
+
+  @media (max-width: 768px) {
+    width: 55%;
+    margin: 0 auto;
+    display: grid;    
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr ));
+    grid-auto-rows: minmax(8rem, auto);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    justify-content: center;
+    grid-template-areas:
+      "artigo1" 
+      "artigo2"
+      "artigo3" 
+      "artigo4"
+      "artigo5" 
+      "artigo6";
   }
 `;
 
