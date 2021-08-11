@@ -98,7 +98,7 @@ export const Card = styled.div`
 
 export const Image = styled.img`
 
-
+  border-radius: 10px 10px 0 0;
   @media (min-width: 768px) {
     width: 380px;
     height: 253px;
